@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args);\n// TODO: add JWT auth + mock users\nvar app = builder.Build();\napp.MapPost("/login", (LoginDto dto) => {\n    // validate user, return JWT\n    return Results.Ok(new { token = "mock-jwt" });\n});\napp.Run();
