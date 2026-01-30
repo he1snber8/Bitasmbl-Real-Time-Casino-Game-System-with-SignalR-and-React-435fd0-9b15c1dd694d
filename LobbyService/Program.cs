@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args);\nbuilder.Services.AddSignalR();\n// TODO: load games.json into singleton service\nvar app = builder.Build();\napp.MapHub<LobbyHub>("/hub/lobby");\napp.Run();
