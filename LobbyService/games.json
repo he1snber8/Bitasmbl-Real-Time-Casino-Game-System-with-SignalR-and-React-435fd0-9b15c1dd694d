@@ -1,0 +1,1 @@
+[\n  {\n    "gameName": "Game1",\n    "gameServiceAddress": "http://game1-service",\n    "rules": [\n      {\n        "ruleName": "delayTime",\n        "type": "number",\n        "minValue": 5,\n        "maxValue": 60\n      }\n    ]\n  }\n]
