@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args);\nbuilder.Services.AddSignalR();\nvar app = builder.Build();\napp.MapHub<Game1Hub>("/hub/game1");\napp.Run();
