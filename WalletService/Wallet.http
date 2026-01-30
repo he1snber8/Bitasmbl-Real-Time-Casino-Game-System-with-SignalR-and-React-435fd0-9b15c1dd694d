@@ -1,0 +1,1 @@
+### Debit example\nPOST https://localhost:5001/wallet/debit\nContent-Type: application/json\n\n{\n  "userId": "player1",\n  "amount": 10.0,\n  "txId": "tx-1"\n}\n
