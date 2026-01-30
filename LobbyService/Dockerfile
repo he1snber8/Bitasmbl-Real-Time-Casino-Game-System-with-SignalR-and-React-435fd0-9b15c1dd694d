@@ -1,0 +1,1 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base\nWORKDIR /app\nEXPOSE 80\nFROM mcr.microsoft.com/dotnet/sdk:8.0 AS build\nWORKDIR /src\nCOPY . .\nRUN dotnet publish -c Release -o /app/publish\nFROM base AS final\nWORKDIR /app\nCOPY --from=build /app/publish .\nENTRYPOINT ["dotnet", "LobbyService.dll"]
